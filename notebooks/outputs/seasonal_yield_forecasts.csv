@@ -1,0 +1,19 @@
+region,crop,season,avg_low_yield_risk_prob,risk_category
+Andhra Pradesh,Maize,Kharif,0.371322222222222,Medium
+Andhra Pradesh,Maize,Rabi,0.35155833333333314,Medium
+Andhra Pradesh,Rice,Kharif,0.3566937499999998,Medium
+Andhra Pradesh,Rice,Rabi,0.3074312499999998,Medium
+Andhra Pradesh,Wheat,Kharif,0.4664199999999995,Medium
+Andhra Pradesh,Wheat,Rabi,0.33598999999999996,Medium
+Karnataka,Maize,Kharif,0.3000285714285714,Medium
+Karnataka,Maize,Rabi,0.3344312499999998,Medium
+Karnataka,Rice,Kharif,0.3782799999999999,Medium
+Karnataka,Rice,Rabi,0.3953125,Medium
+Karnataka,Wheat,Kharif,0.3135625000000001,Medium
+Karnataka,Wheat,Rabi,0.3784000000000003,Medium
+Tamil Nadu,Maize,Kharif,0.3497500000000005,Medium
+Tamil Nadu,Maize,Rabi,0.32689444444444427,Medium
+Tamil Nadu,Rice,Kharif,0.36496000000000006,Medium
+Tamil Nadu,Rice,Rabi,0.3016083333333335,Medium
+Tamil Nadu,Wheat,Kharif,0.28672500000000084,Low
+Tamil Nadu,Wheat,Rabi,0.3969083333333332,Medium

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crop Yield Risk Predictor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+        }
+        .container {
+            width: 420px;
+            background: #fff;
+            padding: 25px;
+            margin: 40px;
+            border-radius: 8px;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        button {
+            background: #2f7ae5;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            background: #eef4ff;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Climate & Weather Yield Risk Predictor</h2>
+
+    <form method="POST" action="/predict">
+        <input type="text" name="region" placeholder="Region" required>
+        <input type="text" name="crop" placeholder="Crop" required>
+        <input type="text" name="season" placeholder="Season" required>
+
+        <input type="number" step="0.1" name="avg_temp_c" placeholder="Avg Temp (°C)" required>
+        <input type="number" step="0.1" name="total_rainfall_mm" placeholder="Total Rainfall (mm)" required>
+        <input type="number" step="0.1" name="avg_humidity_pct" placeholder="Avg Humidity (%)" required>
+
+        <select name="drought_flag">
+            <option value="0">No Drought</option>
+            <option value="1">Drought</option>
+        </select>
+
+        <select name="heat_stress_flag">
+            <option value="0">No Heat Stress</option>
+            <option value="1">Heat Stress</option>
+        </select>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction %}
+    <div class="result">
+        <strong>Predicted Risk Probability:</strong> {{ prob }} <br>
+        <strong>Risk Category:</strong> {{ risk }}
+    </div>
+    {% endif %}
+</div>
+
+</body>
+</html>
